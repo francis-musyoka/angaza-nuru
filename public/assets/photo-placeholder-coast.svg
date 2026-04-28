@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Photo placeholder — children at coastal classroom">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F1C4A3"></stop>
+      <stop offset="55%" stop-color="#E8A87C"></stop>
+      <stop offset="100%" stop-color="#C8553D"></stop>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3E5C84"></stop>
+      <stop offset="100%" stop-color="#1E3A5F"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"></rect>
+  <circle cx="600" cy="180" r="70" fill="#FBF7EE" opacity="0.85"></circle>
+  <rect x="0" y="320" width="800" height="180" fill="url(#sea)"></rect>
+  <path d="M 0 320 Q 200 305, 400 320 T 800 320 L 800 340 L 0 340 Z" fill="#3E5C84" opacity="0.6"></path>
+  
+  <g fill="#2C2419" opacity="0.85">
+    <rect x="80" y="240" width="6" height="100"></rect>
+    <path d="M 83 240 q -30 -10 -50 -2 q 20 -2 30 6 q -25 -22 -45 -22 q 30 -2 38 8 q -10 -28 -28 -34 q 28 6 38 16 q 0 -22 12 -34 q 0 22 8 28 q 10 -18 32 -22 q -22 12 -28 30 q 18 -10 36 -8 q -22 4 -38 18 q 26 -2 38 6 q -28 -2 -42 8 z"></path>
+    <rect x="710" y="220" width="7" height="120"></rect>
+    <path d="M 713 220 q -34 -12 -58 -3 q 26 -2 36 8 q -32 -22 -54 -22 q 36 -2 46 8 q -12 -32 -32 -38 q 32 6 44 18 q 0 -26 14 -40 q 0 26 10 32 q 12 -22 38 -26 q -26 14 -34 36 q 22 -12 44 -10 q -28 6 -46 22 q 32 -2 46 8 q -34 -2 -50 8 z"></path>
+  </g>
+  <text x="50%" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2C2419" opacity="0.5">PHOTO PLACEHOLDER · replace with authentic candid photography</text>
+</svg>

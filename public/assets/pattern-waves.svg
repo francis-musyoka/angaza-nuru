@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60" role="img" aria-label="Wave pattern">
+  <defs>
+    <pattern id="waves" x="0" y="0" width="120" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 0 15 Q 15 5, 30 15 T 60 15 T 90 15 T 120 15" fill="none" stroke="#1E3A5F" stroke-width="1.5" opacity="0.5"></path>
+      <path d="M 0 25 Q 15 18, 30 25 T 60 25 T 90 25 T 120 25" fill="none" stroke="#3E5C84" stroke-width="1" opacity="0.4"></path>
+    </pattern>
+  </defs>
+  <rect width="120" height="60" fill="url(#waves)"></rect>
+</svg>

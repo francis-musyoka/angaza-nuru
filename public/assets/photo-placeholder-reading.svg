@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600" role="img" aria-label="Photo placeholder — child reading">
+  <defs>
+    <linearGradient id="warmbg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F1C4A3"></stop>
+      <stop offset="100%" stop-color="#E8A87C"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="600" fill="url(#warmbg2)"></rect>
+  <g fill="#2C2419" opacity="0.8">
+    <circle cx="250" cy="220" r="80"></circle>
+    <path d="M 130 360 Q 250 290, 370 360 L 370 560 L 130 560 Z"></path>
+    
+    <rect x="180" y="380" width="140" height="90" fill="#F8F1E5" opacity="0.92" rx="2"></rect>
+    <line x1="250" y1="380" x2="250" y2="470" stroke="#2C2419" stroke-width="1" opacity="0.3"></line>
+  </g>
+  <text x="50%" y="585" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2C2419" opacity="0.55">PHOTO PLACEHOLDER · authentic candid only</text>
+</svg>

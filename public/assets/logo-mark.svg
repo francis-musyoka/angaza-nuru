@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Angaza Nuru mark">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F1C4A3"></stop>
+      <stop offset="60%" stop-color="#E8A87C"></stop>
+      <stop offset="100%" stop-color="#C8553D"></stop>
+    </radialGradient>
+  </defs>
+  
+  <path d="M8 78 C 30 64, 90 64, 112 78 L 112 100 C 112 108, 104 116, 96 116 L 24 116 C 16 116, 8 108, 8 100 Z" fill="#1E3A5F"></path>
+  <path d="M14 86 C 36 78, 84 78, 106 86" stroke="#3E5C84" stroke-width="2" fill="none" stroke-linecap="round"></path>
+  
+  <circle cx="60" cy="62" r="26" fill="url(#sun)"></circle>
+  
+  <g stroke="#C8553D" stroke-width="3" stroke-linecap="round">
+    <line x1="60" y1="10" x2="60" y2="22"></line>
+    <line x1="24" y1="26" x2="32" y2="34"></line>
+    <line x1="96" y1="26" x2="88" y2="34"></line>
+    <line x1="10" y1="58" x2="22" y2="58"></line>
+    <line x1="98" y1="58" x2="110" y2="58"></line>
+  </g>
+</svg>
