@@ -184,6 +184,15 @@
     --text-sm: var(--fs-sm);
     --text-xs: var(--fs-xs);
 
+    /* Inherit line-height from parent so font-size utilities don't override
+       the cascade (matches arbitrary text-[Npx] behavior). */
+    --text-xs--line-height: inherit;
+    --text-sm--line-height: inherit;
+    --text-base--line-height: inherit;
+    --text-lg--line-height: inherit;
+    --text-3xl--line-height: inherit;
+    --text-4xl--line-height: inherit;
+
     --ease-out: var(--ease-out);
     --ease-in-out: var(--ease-in-out);
 }

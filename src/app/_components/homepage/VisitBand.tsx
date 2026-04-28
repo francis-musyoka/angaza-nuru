@@ -11,7 +11,7 @@ export function VisitBand() {
 
     return (
         <section id="visit" className="bg-cream-deep">
-            <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+            <div className="mx-auto grid max-w-300 items-center gap-10 px-5 py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
                 <div className="flex flex-col gap-6">
                     <Eyebrow>{visitBand.eyebrow}</Eyebrow>
                     <h2 className="font-display text-h1 leading-[1.1]">

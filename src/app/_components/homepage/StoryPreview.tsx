@@ -8,7 +8,7 @@ export function StoryPreview() {
     const { quote, byline, image, cta } = storyPreview;
 
     return (
-        <section className="relative overflow-hidden bg-cream py-25 lg:py-24 sm:py-16">
+        <section className="relative overflow-hidden bg-cream py-25 sm:py-16 lg:py-24">
             {/* Decorative rays bottom-left */}
             <div
                 aria-hidden="true"

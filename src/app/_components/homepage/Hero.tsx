@@ -96,7 +96,7 @@ export function Hero() {
 
                     {/* Floating stat card — bottom-left of photo */}
                     {hero.floatingCard && (
-                        <div className="absolute -left-8 -bottom-7 flex items-center gap-3 rounded-2xl border border-(--border-1) bg-(--bg-raised) px-4.5 py-3 pr-4.5 pl-3.5 shadow-2">
+                        <div className="absolute -left-8 -bottom-7 flex items-center gap-3 rounded-2xl border border-(--border-1) bg-(--bg-raised) py-3 pr-4.5 pl-3.5 shadow-2">
                             {/* Thumbnail */}
                             <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl bg-sand-200">
                                 <Image

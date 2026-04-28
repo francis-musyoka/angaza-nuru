@@ -17,7 +17,7 @@ export function DonateBand() {
             className="relative overflow-hidden bg-terracotta text-(--fg-on-warm)"
         >
             <Pattern kind="rays" opacity={0.08} />
-            <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+            <div className="relative mx-auto grid max-w-300 gap-10 px-5 py-16 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16 lg:px-8 lg:py-24">
                 <div className="flex flex-col gap-5">
                     <Eyebrow tone="warm">{donate.eyebrow}</Eyebrow>
                     <h2 className="font-display text-[clamp(40px,4.5vw,64px)] font-normal leading-[1.05] tracking-[-0.02em] text-(--fg-on-warm) text-balance">
