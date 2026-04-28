@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+/* Google Fonts loaded via next/font in layout.tsx — do not @import here */
+
+:root {
+    /* ---------- Brand palette (verbatim from colors_and_type.css) ---------- */
+    --terracotta: #c8553d;
+    --terracotta-deep: #9e3e2a;
+    --terracotta-soft: #e07559;
+
+    --ocean: #1e3a5f;
+    --ocean-deep: #122842;
+    --ocean-soft: #3e5c84;
+
+    --sunset: #e8a87c;
+    --sunset-soft: #f1c4a3;
+    --sunset-deep: #c9885e;
+
+    --cream: #f8f1e5;
+    --cream-deep: #ede2cc;
+    --cream-soft: #fbf7ee;
+
+    --charcoal: #2c2419;
+    --charcoal-soft: #4a3f30;
+    --charcoal-mute: #7a6e5c;
+
+    /* Sand neutrals */
+    --sand-50: #fbf7ee;
+    --sand-100: #f4ecdc;
+    --sand-200: #e8dcc1;
+    --sand-300: #d6c39e;
+    --sand-400: #b7a079;
+    --sand-500: #8e7857;
+    --sand-600: #6b5840;
+    --sand-700: #4a3f30;
+    --sand-800: #2c2419;
+    --sand-900: #1a1410;
+
+    /* Semantic surfaces */
+    --bg: var(--cream);
+    --bg-raised: #fffdf7;
+    --bg-sunk: var(--cream-deep);
+    --bg-ocean: var(--ocean);
+    --bg-warm: var(--terracotta);
+
+    /* Semantic text */
+    --fg-1: var(--charcoal);
+    --fg-2: var(--charcoal-soft);
+    --fg-3: var(--charcoal-mute);
+    --fg-on-dark: var(--cream);
+    --fg-on-warm: #fffdf7;
+    --fg-link: var(--terracotta-deep);
+
+    /* Borders */
+    --border-1: rgba(44, 36, 25, 0.12);
+    --border-2: rgba(44, 36, 25, 0.22);
+    --border-on-dark: rgba(248, 241, 229, 0.18);
+
+    /* Status */
+    --success: #5c8a3a;
+    --warning: #d9a441;
+    --danger: #b33a2a;
+    --info: var(--ocean-soft);
+
+    /* Typography (font families injected by next/font as --font-display / --font-body) */
+    --font-mono: ui-monospace, "JetBrains Mono", Menlo, monospace;
+
+    /* Fluid type scale */
+    --fs-display: clamp(2.75rem, 1.8rem + 4vw, 5rem);
+    --fs-h1: clamp(2.25rem, 1.6rem + 2.5vw, 3.5rem);
+    --fs-h2: clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem);
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-lg: 1.125rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-xs: 0.75rem;
+
+    --lh-tight: 1.1;
+    --lh-snug: 1.25;
+    --lh-body: 1.6;
+    --lh-loose: 1.75;
+
+    --tracking-tight: -0.02em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.08em;
+
+    /* Spacing — 4px base */
+    --s-0: 0;
+    --s-1: 0.25rem;
+    --s-2: 0.5rem;
+    --s-3: 0.75rem;
+    --s-4: 1rem;
+    --s-5: 1.5rem;
+    --s-6: 2rem;
+    --s-7: 3rem;
+    --s-8: 4rem;
+    --s-9: 6rem;
+    --s-10: 8rem;
+
+    /* Radii */
+    --r-xs: 4px;
+    --r-sm: 8px;
+    --r-md: 14px;
+    --r-lg: 20px;
+    --r-xl: 28px;
+    --r-pill: 999px;
+
+    /* Shadows (warm cast) */
+    --shadow-1: 0 1px 2px rgba(44, 36, 25, 0.06), 0 1px 3px rgba(44, 36, 25, 0.04);
+    --shadow-2: 0 4px 12px rgba(44, 36, 25, 0.08), 0 2px 4px rgba(44, 36, 25, 0.04);
+    --shadow-3: 0 12px 32px rgba(44, 36, 25, 0.14), 0 4px 8px rgba(44, 36, 25, 0.06);
+    --shadow-warm: 0 12px 32px rgba(200, 85, 61, 0.22);
+    --shadow-inset: inset 0 1px 0 rgba(255, 253, 247, 0.6);
+
+    /* Motion */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --dur-fast: 140ms;
+    --dur: 240ms;
+    --dur-slow: 420ms;
+}
+
+/* ---------- Tailwind v4 theme — exposes tokens as utilities ---------- */
+@theme {
+    --color-terracotta: var(--terracotta);
+    --color-terracotta-deep: var(--terracotta-deep);
+    --color-terracotta-soft: var(--terracotta-soft);
+
+    --color-ocean: var(--ocean);
+    --color-ocean-deep: var(--ocean-deep);
+    --color-ocean-soft: var(--ocean-soft);
+
+    --color-sunset: var(--sunset);
+    --color-sunset-soft: var(--sunset-soft);
+    --color-sunset-deep: var(--sunset-deep);
+
+    --color-cream: var(--cream);
+    --color-cream-deep: var(--cream-deep);
+    --color-cream-soft: var(--cream-soft);
+
+    --color-charcoal: var(--charcoal);
+    --color-charcoal-soft: var(--charcoal-soft);
+    --color-charcoal-mute: var(--charcoal-mute);
+
+    --color-sand-50: var(--sand-50);
+    --color-sand-100: var(--sand-100);
+    --color-sand-200: var(--sand-200);
+    --color-sand-300: var(--sand-300);
+    --color-sand-400: var(--sand-400);
+    --color-sand-500: var(--sand-500);
+    --color-sand-600: var(--sand-600);
+    --color-sand-700: var(--sand-700);
+    --color-sand-800: var(--sand-800);
+    --color-sand-900: var(--sand-900);
+
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-danger: var(--danger);
+
+    --font-display: var(--font-display);
+    --font-body: var(--font-body);
+
+    --shadow-1: var(--shadow-1);
+    --shadow-2: var(--shadow-2);
+    --shadow-3: var(--shadow-3);
+    --shadow-warm: var(--shadow-warm);
+    --shadow-inset: var(--shadow-inset);
+
+    --radius-xs: var(--r-xs);
+    --radius-sm: var(--r-sm);
+    --radius-md: var(--r-md);
+    --radius-lg: var(--r-lg);
+    --radius-xl: var(--r-xl);
+    --radius-pill: var(--r-pill);
+
+    --text-display: var(--fs-display);
+    --text-h1: var(--fs-h1);
+    --text-h2: var(--fs-h2);
+    --text-h3: var(--fs-h3);
+    --text-h4: var(--fs-h4);
+    --text-lg: var(--fs-lg);
+    --text-base: var(--fs-base);
+    --text-sm: var(--fs-sm);
+    --text-xs: var(--fs-xs);
+
+    --ease-out: var(--ease-out);
+    --ease-in-out: var(--ease-in-out);
+}
+
+/* ---------- Element defaults ----------
+   Wrapped in @layer base so Tailwind utility classes (like text-cream,
+   text-sunset, font-display) can override these defaults via the cascade.
+   Without the layer, these unlayered rules would beat the utilities layer.
+*/
+@layer base {
+    html {
+        color: var(--fg-1);
+        background: var(--bg);
+    }
+    body {
+        font-family: var(--font-body), "Inter", system-ui, -apple-system, sans-serif;
+        font-size: var(--fs-base);
+        line-height: var(--lh-body);
+        color: var(--fg-2);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    .display {
+        font-family: var(--font-display), "Fraunces", Georgia, serif;
+        color: var(--fg-1);
+        letter-spacing: var(--tracking-tight);
+        line-height: var(--lh-tight);
+        font-weight: 400;
+        text-wrap: balance;
+    }
+    .display {
+        font-size: var(--fs-display);
+    }
+    h1,
+    .h1 {
+        font-size: var(--fs-h1);
+    }
+    h2,
+    .h2 {
+        font-size: var(--fs-h2);
+    }
+    h3,
+    .h3 {
+        font-size: var(--fs-h3);
+    }
+    h4,
+    .h4 {
+        font-size: var(--fs-h4);
+        line-height: var(--lh-snug);
+    }
+    p {
+        line-height: var(--lh-body);
+        text-wrap: pretty;
+    }
+    ::selection {
+        background: var(--sunset);
+        color: var(--charcoal);
+    }
+}
+
+/* ---------- Mobile menu global state class (toggled by Header) ---------- */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* ---------- Scroll lock when modal open ---------- */
+body.modal-open {
+    overflow: hidden;
+}
